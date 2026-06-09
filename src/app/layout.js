@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { Hind_Siliguri, Inter } from "next/font/google";
+import "swiper/css";
 import "./globals.css";
 
 const inter=Inter({

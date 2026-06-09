@@ -23,13 +23,13 @@ const services = [
 ];
 export default function HelpUsBanner() {
   return (
-    <section className="bg-[url('/images/home/banner/baby-playing.webp')] bg-cover bg-center h-160 lg:h-125 mt-16 text-white grid place-items-center">
+    <section className="bg-[url('/images/home/banner/baby-playing.webp')] bg-cover bg-center h-200 sm:h-160 lg:h-125 mt-16 text-white grid place-items-center">
       <div className="container">
         <div>
-          <h2 className="text-center font-bold text-[56px]">
+          <h2 className="text-center font-bold text-2xl sm:text-3xl md:text-4xl lg:text-[56px]">
             HOW CAN YOU HELP US?
           </h2>
-          <p className="font-semibold">
+          <p className="text-sm sm:text-base font-semibold">
             Empowering communities across Bangladesh through education,
             healthcare, and sustainable development.
           </p>
@@ -37,11 +37,11 @@ export default function HelpUsBanner() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
           {services.map((service) => (
             <div key={service.id} className="flex items-start gap-4">
-              <div className="border p-5.5">
+              <div className="border p-2 sm:p-5.5">
                 <Icon icon={service.icon} width="40" height="40" />
               </div>
               <div>
-                <h3 className="font-medium text-2xl">{service.title}</h3>
+                <h3 className="font-medium text-xl sm:text-2xl">{service.title}</h3>
                 <p className="text-justify text-[13px] mb-6.5">{service.desc}</p>
                 <Button type="outline" size="small">
                   Learn More

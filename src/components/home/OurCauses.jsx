@@ -93,12 +93,13 @@ export default function OurCauses() {
           <h5 className="font-bold text-white text-5xl">IMAGE</h5>
         </div>
       </div>
-      <div className="grid grid-cols-4 gap-5 mt-8">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-8">
         {achivements.map((achivement)=><div key={achivement.id} className="bg-black grid  place-items-center text-white rounded-cs py-6.5">
             <p className="font-semibold">{achivement.value}</p>
             <p className="font-medium text-sm">{achivement.title}</p>
         </div>)}
       </div>
+      
     </section>
   );
 }

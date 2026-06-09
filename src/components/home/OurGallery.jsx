@@ -7,8 +7,8 @@ export default function OurGallery() {
     <section className='container mt-16'>
         <CommonHeading text="our" redText="Gallery" center={true}/>
         <p className='font-semibold text-center mt-8'>We create events aiming to pear to the voice for children and gather for support. Please update with our events and confirm you presence.</p>
-        <div className='flex items-center justify-center gap-10 font-bold text-[15px] text-charcoal mt-8 mb-14'>
-            {categories.map((category,id)=><button className='capitalize' key={id}>
+        <div className='flex flex-wrap items-center justify-center gap-x-10 gap-y-5 font-bold text-[15px] text-charcoal mt-8 mb-14'>
+            {categories.map((category,id)=><button className={`capitalize ${id==0&&"text-red"}`} key={id}>
                 {category}
             </button>)}
         </div>

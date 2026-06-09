@@ -41,7 +41,7 @@ export default function Header() {
               </a>
               <a
                 href="mailto:info@ashafoundation.org.bd"
-                className="flex items-center text-sm  text-white py-1 px-3"
+                className=" items-center text-sm  text-white py-1 px-3 hidden sm:flex"
               >
                 <Icon
                   icon="material-symbols:mail-outline-sharp"
@@ -53,7 +53,7 @@ export default function Header() {
               </a>
             </div>
             <div className="flex items-center gap-x-4">
-              <div className="flex items-center gap-x-2">
+              <div className="sm:flex items-center gap-x-2 hidden ">
                 <a
                   href="https://www.facebook.com/ngobd"
                   className=" border rounded-full size-6 grid place-content-center  text-white py-1 px-3 hover:bg-white hover:text-darkgreen transition-colors duration-300"
@@ -106,9 +106,9 @@ export default function Header() {
                     alt="Logo"
                     width={70}
                     height={70}
-                    className="w-17.5 object-cover"
+                    className="w-10 sm:w-17.5 object-cover"
                   />
-                  <span className="ml-2 font-bold text-5xl font-hind-siliguri">
+                  <span className="ml-2 font-bold text-3xl sm:text-5xl font-hind-siliguri">
                     NGO
                   </span>
                 </Link>
@@ -129,12 +129,15 @@ export default function Header() {
                   ))}
                 </ul>
                 <div className="flex items-center gap-x-4">
-                  <Button className="px-6 py-2 bg-gold text-darkSlate hover:bg-gold/90">
+                  <Button className="hidden sm:block">
+                    Donate
+                  </Button>
+                  <Button size="small" className=" sm:hidden">
                     Donate
                   </Button>
                   <button
                     onClick={() => setIsShowNav((prev) => !prev)}
-                    className="cursor-pointer bg-green-500/40 px-1.5 py-1 rounded-lg lg:hidden"
+                    className="cursor-pointer bg-white/20 px-1.5 py-1 rounded-lg lg:hidden"
                   >
                     <Icon
                       icon="material-symbols:menu-rounded"
@@ -145,7 +148,7 @@ export default function Header() {
               </div>
               {/* for mobile */}
               <div
-                className={`lg:hidden absolute z-99  right-0 w-full h-screen top-0 transition-all duration-300  bg-white/30  origin-right ${
+                className={`lg:hidden absolute z-99  right-0 w-full h-screen top-0 transition-all duration-300  bg-black/40  origin-right ${
                   isShowNav ? "scale-x-100 opacity-100" : "scale-x-0 opacity-0"
                 }`}
               >

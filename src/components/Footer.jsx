@@ -37,14 +37,14 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-deepgreen  text-white py-8 md:py-12 lg:py-13.25">
-      <div className="container  flex flex-col gap-4 md:flex-row gap-y-6 justify-between items-center">
+    <footer className="bg-deepgreen grid text-white py-8 md:py-12 lg:py-13.25 ">
+      <div className="mt-10 sm:mt-0 container order-2 flex flex-col gap-4 md:flex-row gap-y-6 justify-between sm:items-center">
         <div className="flex-1 max-w-116.75">
           <div>
             <small className="text-xl font-medium">Newsletter</small>
             <h2 className="text-4xl font-bold my-8">Get Update Every Week</h2>
           </div>
-          <div className="flex flex-col sm:flex-row gap-5 items-center w-full ">
+          <div className="flex flex-col sm:flex-row gap-5 sm:items-center w-full ">
             <input
               type="email"
               value={email}
@@ -60,7 +60,7 @@ export default function Footer() {
             </button>
           </div>
         </div>
-        <div>
+        <div className="mb-2 sm:mb-0">
           <div>
             <h4 className="text-lg font-semibold flex items-center gap-1.5">
               <Icon icon="tdesign:call" width="20" height="20" /> Give us a call
@@ -74,7 +74,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="container grid lg:grid-cols-[288px_1.4fr] xl:grid-cols-[288px_1.2fr] lg:gap-x-14  xl:gap-x-20 mt-16">
+      <div className="container order-1 grid lg:grid-cols-[288px_1.4fr] xl:grid-cols-[288px_1.2fr]  lg:gap-x-14  xl:gap-x-20  sm:mt-16">
         <div>
           <Link href="/" className="flex items-center">
             <Image
@@ -105,7 +105,7 @@ export default function Footer() {
               ))}
             </ul>
         </div>
-        <div className="grid grid-cols-[2fr_1fr_1fr] gap-20  mt-12 lg:mt-0 pt-3.25">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr] gap-10 sm:gap-14 md:gap-16 lg:gap-20  mt-12 lg:mt-0 pt-3.25">
           <div>
             <p className="text-lg font-semibold">Contact Us</p>
             <ul className="mt-4.75 space-y-3.5">
@@ -152,13 +152,13 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="container">
+      <div className="container order-3">
         <hr className=" text-gray-300 mt-2 mb-4" />
         <div className="flex flex-col-reverse lg:flex-row gap-y-6 justify-between md:items-center ">
           <p className="text-light text-sm sm:text-base">
             © 2025 NGO. All rights reserved.
           </p>
-          <div className="flex flex-col md:flex-row justify-between gap-4 w-124">
+          <div className="flex flex-col md:flex-row justify-between gap-4 lg:w-124">
             <Link
               href="/privacy-policy"
               className="text-light underline hover:text-blue-500 relative "
