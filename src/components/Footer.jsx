@@ -38,8 +38,8 @@ export default function Footer() {
 
   return (
     <footer className="bg-deepgreen grid text-white py-8 md:py-12 lg:py-13.25 ">
-      <div className="mt-10 sm:mt-0 container order-2 flex flex-col gap-4 md:flex-row gap-y-6 justify-between sm:items-center">
-        <div className="flex-1 max-w-116.75">
+      <div className="mt-10 sm:mt-0 container order-2 md:order-1 flex flex-col gap-4 md:flex-row gap-y-6 justify-between md:items-center">
+        <div className="flex-1 w-full md:max-w-116.75 ">
           <div>
             <small className="text-xl font-medium">Newsletter</small>
             <h2 className="text-4xl font-bold my-8">Get Update Every Week</h2>
@@ -60,7 +60,7 @@ export default function Footer() {
             </button>
           </div>
         </div>
-        <div className="mb-2 sm:mb-0">
+        <div className="mb-2 md:mb-0">
           <div>
             <h4 className="text-lg font-semibold flex items-center gap-1.5">
               <Icon icon="tdesign:call" width="20" height="20" /> Give us a call
@@ -74,7 +74,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="container order-1 grid lg:grid-cols-[288px_1.4fr] xl:grid-cols-[288px_1.2fr]  lg:gap-x-14  xl:gap-x-20  sm:mt-16">
+      <div className="container order-1 md:order-2 grid lg:grid-cols-[288px_1.4fr] xl:grid-cols-[288px_1.2fr]  lg:gap-x-14  xl:gap-x-20  md:mt-16">
         <div>
           <Link href="/" className="flex items-center">
             <Image
