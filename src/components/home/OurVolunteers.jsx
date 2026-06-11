@@ -27,18 +27,18 @@ const volunteers=[
 ]
 export default function OurVolunteers() {
   return (
-    <section className="container">
+    <section className="container mt-16">
         <div  className="text-center max-w-155 mx-auto">
             <CommonHeading text="our" redText="VOLUNTEERS" center={true}/>
             <p className="mt-8 font-semibold">We create events aiming to pear to the voice for children and gather for support.Please update with our events and confirm you presence.</p>
         </div>
-        <div className="grid sm:grid-col-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-8">
+        <div className="grid sm:grid-col-2 md:grid-cols-3 lg:grid-cols-4 gap-8 sm:gap-5 mt-8">
             {volunteers.map(volunteer=><div key={volunteer.id}>
                 <div className="h-100 w-full bg-black">
 
                 </div>
                 <div className="text-center">
-                    <h2 className="my-8 font-semibold text-4xl">{volunteer.name}</h2>
+                    <h2 className="mt-8 mb-2 sm:mb-4 md:mb-8 font-semibold text-2xl sm:text-3xl lg:text-4xl">{volunteer.name}</h2>
                     <p className="font-semibold">{volunteer.position}</p>
                 </div>
             </div>)}
