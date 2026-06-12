@@ -1,5 +1,4 @@
-import Link from "next/link";
-import Button from "../Button";
+import BlogCard from "../BlogCard";
 import CommonHeading from "../CommonHeading";
 const latestBlogs = [
   {
@@ -36,24 +35,7 @@ export default function LatestBlog() {
       </div>
       <div className="mt-14 grid sm:grid-cols-2  lg:grid-cols-3 gap-6.5">
         {latestBlogs.map((blog) => (
-          <div key={blog.id}>
-            <div className="w-full h-101 bg-black rounded-cs"></div>
-            <div>
-              <div className="flex justify-between items-center mt-4">
-                <p className="capitalize">By: {blog.role}</p>
-                <p>15 | 25</p>
-              </div>
-              <div className="mt-8">
-                <h2 className=" font-semibold text-4xl">{blog.name}</h2>
-                <p className="mt-4 mb-8">{blog.desc}</p>
-                <Link href="/blog" className="ml-auto w-fit block">
-                  <Button size="small" type="outline">
-                    Read More
-                  </Button>
-                </Link>
-              </div>
-            </div>
-          </div>
+          <BlogCard blog={blog} key={blog.id}/>
         ))}
       </div>
     </section>

@@ -137,10 +137,12 @@ export default function Header() {
                     ))}
                   </ul>
                   <div className="flex items-center gap-x-4">
+                    <Link href="/donation">
                     <Button className="hidden sm:block">Donate</Button>
                     <Button size="small" className=" sm:hidden">
                       Donate
                     </Button>
+                    </Link>
                     <button
                       onClick={() => setIsShowNav((prev) => !prev)}
                       className="cursor-pointer bg-white/20 px-1.5 py-1 rounded-lg lg:hidden"
