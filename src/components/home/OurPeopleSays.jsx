@@ -39,7 +39,7 @@ const testimonials = [
 ];
 export default function OurPeopleSays() {
   return (
-    <section>
+    <section className="mt-10 md:mt-12 lg:mt-16">
       <CommonHeading text="What" redText="PEOPLE SAYS" center={true} />
       <div className="bg-black text-white min-h-125 mt-8">
         <div className="container py-20">
@@ -71,12 +71,12 @@ export default function OurPeopleSays() {
                       <p className="font-semibold">{testimonial.position}</p>
                     </div>
                   </div>
-                  <div className="flex justify-between absolute top-1/2 -translate-y-1/2 w-full">
+                  <div className="flex justify-between absolute top-10 md:top-1/2 md:-translate-y-1/2 w-full">
                     <button className="custom-prev2">
-                      <Arrow className="size-14 rotate-180" />
+                      <Arrow className="size-12 sm:size-14 rotate-180" />
                     </button>
                     <button className="custom-next2">
-                      <Arrow className="size-14" />
+                      <Arrow className="size-12 sm:size-14" />
                     </button>
                   </div>
                 </div>
