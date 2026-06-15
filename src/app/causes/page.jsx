@@ -4,7 +4,7 @@ import HeroBanner from "@/components/HeroBanner";
 export default function Causes() {
   return (
     <main>
-      <HeroBanner>
+      <HeroBanner height="h-155 sm:h-170">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex-1 max-w-120">
             <h2 className="text-4xl md:text-5xl lg:text-[56px] font-bold">

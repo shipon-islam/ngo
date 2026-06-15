@@ -5,7 +5,7 @@ import OurSponsor from "@/components/home/OurSponsor";
 export default function page() {
   return (
     <main>
-      <HeroBanner>
+      <HeroBanner height="h-140 sm:h-180">
         <div className="max-w-195">
           <p className="text-sm bg-red px-3 py-1 w-fit rounded-md">Make a difference</p>
           <h2 className="text-4xl md:text-5xl lg:text-[56px] font-bold mt-8">
